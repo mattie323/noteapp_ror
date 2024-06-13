@@ -1,0 +1,10 @@
+<h1>Note App</h1>
+<%= button_to 'Create Note', new_note_post_path, method: :get %>
+<% @note_posts.each do |note_post| %>
+  <div> 
+    <h2>Title: <%= note_post.title %></h2>
+    <p><%= note_post.body %></p>
+    <p><%= note_post.created_at %></p>
+    <p><%= link_to 'view details', note_post_path(note_post) %></p>
+  </div>
+<% end %>
