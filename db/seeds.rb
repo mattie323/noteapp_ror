@@ -7,3 +7,21 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+NotePost.create([
+    {
+        title: "Lorem Ipsum",
+        body: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        title: "Sample Title",
+        body: "sample body"
+    },
+    {
+        title: "Hello World",
+        body: "sana ol hello world"
+    },
+    {
+        title: "Random Thoughts",
+        body: "qwehjqwkhekjqhekjahskdjhqwe"
+    },
+])
