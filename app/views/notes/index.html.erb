@@ -2,6 +2,8 @@
 
 <h1>Notes</h1>
 
+<%= link_to "Create new note", new_note_path %>
+
 <div id="notes">
   <% @notes.each do |note| %>
     <%= render note %>
@@ -11,4 +13,4 @@
   <% end %>
 </div>
 
-<%= link_to "New note", new_note_path %>
+

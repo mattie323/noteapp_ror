@@ -14,8 +14,10 @@ class NotesTest < ApplicationSystemTestCase
     visit notes_url
     click_on "New note"
 
-    fill_in "Body", with: @note.body
+    fill_in "Feeling", with: @note.feeling
+    fill_in "Message", with: @note.message
     fill_in "Name", with: @note.name
+    fill_in "Nickname", with: @note.nickname
     fill_in "Title", with: @note.title
     click_on "Create Note"
 
@@ -27,8 +29,10 @@ class NotesTest < ApplicationSystemTestCase
     visit note_url(@note)
     click_on "Edit this note", match: :first
 
-    fill_in "Body", with: @note.body
+    fill_in "Feeling", with: @note.feeling
+    fill_in "Message", with: @note.message
     fill_in "Name", with: @note.name
+    fill_in "Nickname", with: @note.nickname
     fill_in "Title", with: @note.title
     click_on "Update Note"
 
