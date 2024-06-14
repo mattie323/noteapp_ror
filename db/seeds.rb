@@ -7,21 +7,25 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
-NotePost.create([
+Note.create([
     {
         title: "Lorem Ipsum",
-        body: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        body: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        name: "Amomynous"
     },
     {
         title: "Sample Title",
-        body: "sample body"
+        body: "sample body",
+        name: "Agogygous"
     },
     {
         title: "Hello World",
-        body: "sana ol hello world"
+        body: "sana ol hello world",
+        name: "Nick"
     },
     {
         title: "Random Thoughts",
-        body: "qwehjqwkhekjqhekjahskdjhqwe"
+        body: "qwehjqwkhekjqhekjahskdjhqwe",
+        name: "Jang Goe"
     },
 ])

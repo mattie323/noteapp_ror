@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
+  resources :notes
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   # root "note_posts#index"
-  resources :note_posts
   # get "/note_posts/new", to: "note_posts#new", as: :new_note_post
   # get "/note_posts/:id", to: "note_posts#show", as: :note_post
   # patch "/note_posts/:id", to: "note_posts#update"
@@ -13,5 +13,5 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
-  root "note_posts#index"
+  root "notes#index"
 end

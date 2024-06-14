@@ -1,7 +1,0 @@
-<%= link_to 'Back', note_posts_path %>
-<h1><%= @note_post.title %></h1>
-<p><%= @note_post.body %></p>
-<%= @note_post.created_at %>
-
-<%= link_to "Edit Note", edit_note_post_path(@note_post), class: "button" %>
-<%= button_to "Delete Note", @note_post, method: :delete %>
