@@ -93,5 +93,5 @@ Naming/VariableName:
 Metrics/ParameterLists:
   Max: 5
 
-Style/EndOfLine:
-  EnforcedStyle: lf
+# Style/EndOfLine:
+#   EnforcedStyle: lf
